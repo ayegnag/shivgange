@@ -1,0 +1,106 @@
+.titleContainer {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.title {
+  font-family: Brotherhood Script;
+  font-size: 12em;
+  animation: color-change 5s infinite;
+}
+.anim {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.first {
+  position: absolute;
+}
+.mid {
+  font-family: Brotherhood Script;
+  font-size: 4em;
+  position: absolute;
+  top: 3em;
+  left: 2.6em;
+  opacity: 0;
+}
+.second {
+  position: absolute;
+  left: 1.085em;
+}
+
+.anim span {
+  opacity: 0;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  animation: color-change 5s infinite, 2s show-letters 2s forwards;
+}
+.second.move {
+  animation: color-change 5s infinite, move-title 2s forwards;
+}
+.anim.shift {
+  animation: move-right 2s forwards;
+}
+
+@keyframes show-letters {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 10%;
+  }
+}
+
+@keyframes move-title {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 1em;
+  }
+  100% {
+    top: 1em;
+    left: 0;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #fffff3aa;
+    text-shadow: 2px 2px #333;
+  }
+  50% {
+    color: #fff;
+    text-shadow: 2px 2px #565656;
+  }
+  100% {
+    color: #fffff3aa;
+    text-shadow: 2px 2px #333;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .titleContainer {
+    position: absolute;
+    top: 12vh;
+  }
+
+  .title {
+    font-size: 7em;
+  }
+}

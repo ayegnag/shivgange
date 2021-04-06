@@ -7,17 +7,11 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.innerBody,
-.pageContainer {
+.innerBody {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.pageContainer {
-  width: 100%;
-  height: 100%;
 }
 
 .middleRow {
@@ -27,45 +21,21 @@
   width: 50%;
 }
 
+.hideRow {
+  opacity: 0;
+}
+
 .innerBody {
   height: 10vw;
   width: 10vw;
+  color: #ffffffcc;
 }
 
 .innerBody span {
   font-size: 5em;
-  color: #282c34;
-}
-
-.title {
-  font-family: Brotherhood Script;
-  font-size: 12em;
-  margin-bottom: 3rem;
-  animation: color-change 5s infinite;
-}
-
-@keyframes color-change {
-  0% {
-    color: #fffff3aa;
-    text-shadow: 2px 2px #333;
-  }
-  50% {
-    color: #fff;
-    text-shadow: 2px 2px #565656;
-  }
-  100% {
-    color: #fffff3aa;
-    text-shadow: 2px 2px #333;
-  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .title {
-    position: absolute;
-    top: 12vh;
-    font-size: 7em;
-  }
-
   .innerBody {
     height: 25vw;
     width: 25vw;

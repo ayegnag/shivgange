@@ -3,12 +3,12 @@ import NumberCard from "./numberCard";
 import "./countdown.css";
 import "../../index.css";
 
-export default function CountDown() {
+export default function CountDown(props) {
   const targetDate = 1625121000000; // 1st July 2021
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
   const [days, setDays] = useState(0);
-
+  const scrollPosition = props.scrollVal;
   const timeDiff = (currentTime) => {
     const duration = targetDate - currentTime;
     let days = Math.floor(duration / (1000 * 60 * 60 * 24));
@@ -30,13 +30,10 @@ export default function CountDown() {
   });
 
   return (
-    <div className="pageContainer">
-      <div className="title">ShivGange</div>
-      <div className="middleRow">
-        <NumberCard val={days} footer="Days"></NumberCard>
-        <NumberCard val={hours} footer="Hours"></NumberCard>
-        <NumberCard val={minutes} footer="Minutes"></NumberCard>
-      </div>
+    <div className={scrollPosition > 5 ? "middleRow hideRow" : "middleRow"}>
+      <NumberCard val={days} footer="Days"></NumberCard>
+      <NumberCard val={hours} footer="Hours"></NumberCard>
+      <NumberCard val={minutes} footer="Minutes"></NumberCard>
     </div>
   );
 }
