@@ -21,8 +21,8 @@
   font-family: Brotherhood Script;
   font-size: 4em;
   position: absolute;
-  top: 3em;
-  left: 2.6em;
+  top: 12rem;
+  left: 11rem;
   opacity: 0;
 }
 .second {
@@ -102,5 +102,10 @@
 
   .title {
     font-size: 7em;
+  }
+  .mid {
+    font-size: 3em;
+    top: 7rem;
+    left: 6rem;
   }
 }
