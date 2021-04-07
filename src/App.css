@@ -13,8 +13,8 @@
   left: 0;
   background: #fafafa;
   z-index: 99;
-  animation-delay: 2s;
   animation: hide-loader 1s forwards;
+  animation-delay: 2s;
 }
 .loading span {
   position: fixed;
