@@ -39,7 +39,8 @@
 }
 
 .show {
-  animation: color-change 5s infinite, 2s show-letters 2s forwards;
+  animation: color-change 5s infinite, show-letters 2s forwards;
+  animation-delay: 2s;
 }
 .second.move {
   animation: color-change 5s infinite, move-title 2s forwards;
