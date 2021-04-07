@@ -4,7 +4,38 @@
   height: 300vh;
   position: relative;
 }
-.fern {
+
+.loading {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fafafa;
+  z-index: 99;
+  animation-delay: 2s;
+  animation: hide-loader 1s forwards;
+}
+.loading span {
+  position: fixed;
+  color: #333;
+  font-size: 4em;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+}
+
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* .fern {
   display: block;
   position: absolute;
   bottom: 0;
@@ -21,9 +52,9 @@
 .corner-right.fern {
   right: 0;
   background-image: url(./assets/images/cornerFern.png);
-}
+} */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .fern {
     width: 50vw;
   }
@@ -33,7 +64,7 @@
   .corner-right.fern {
     background-position: -50vw 0;
   }
-}
+} */
 
 ::-webkit-scrollbar {
   width: 0px;

@@ -6,6 +6,9 @@ import PageContainer from "./components/pageContainer/pagecontainer";
 function App() {
   return (
     <div className="App">
+      <div className="loading">
+        <span>...</span>
+      </div>
       <PageContainer></PageContainer>
     </div>
   );
