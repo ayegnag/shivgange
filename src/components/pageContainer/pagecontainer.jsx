@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CountDown from "../countdownTimer/countdown";
 import SplitTitle from "../splitTitle/splittitle";
+import InviteCard from "../inviteCard/invite"
 import "./pagecontainer.css";
 
 export default function PageContainer() {
@@ -24,7 +25,8 @@ export default function PageContainer() {
   return (
     <div className="pageContainer">
       <SplitTitle scrollVal={scrollPosition}></SplitTitle>
-      <CountDown scrollVal={scrollPosition}></CountDown>
+      <InviteCard></InviteCard>
+      {/* <CountDown scrollVal={scrollPosition}></CountDown>  */}
       <div className={scrollPosition > 5 ? "backdrop blurr" : "backdrop"}></div>
     </div>
   );

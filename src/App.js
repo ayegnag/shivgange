@@ -6,13 +6,18 @@ import PageContainer from "./components/pageContainer/pagecontainer";
 function App() {
   return (
     <div className="App">
-      <div className="loading">
+      <div id="loaderDots" className="loading">
         <span>...</span>
       </div>
       <PageContainer></PageContainer>
     </div>
   );
 }
+
+setTimeout(() => {
+  var loader = document.getElementById("loaderDots");
+  loader.remove();
+}, 3000);
 
 export default App;
 
