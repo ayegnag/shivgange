@@ -1,0 +1,133 @@
+a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.innerBody2 {
+  height: 20vw;
+  width: 50vw;
+  color: #ffffffcc;
+}
+
+.innerBody2 span {
+  font-size: 5em;
+}
+
+.qrCode {
+  height: 16vw;
+  width: 16vw;
+  background-image: url(../../assets/images/QR_invite.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 10px;
+  position: absolute;
+  right: 2vw;
+  top: 2vw;
+}
+
+.btnContainer {
+  width: 28vw;
+  height: 16vw;
+  position: absolute;
+  left: 2vw;
+  top: 2vw;
+  bottom: 2vw;
+}
+
+.btnDiv {
+  height: auto;
+  padding-top: 2vw;
+  text-align: center;
+}
+
+a.btn {
+  display: inline-block;
+  color: #666;
+  background-color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom-width: 3px;
+}
+
+a.btn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+a.btn:active {
+  background-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+/* blue button */
+
+a.btn.btn-blue {
+  background-color: #699db6;
+  border-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+a.btn.btn-blue:hover {
+  background-color: #4f87a2;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+a.btn.btn-blue:active {
+  background-color: #3c677b;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .innerBody2 {
+    height: 80vw;
+    width: 80vw;
+    position: absolute;
+    bottom: 10vw;
+  }
+
+  .qrCode {
+    height: 30vw;
+    width: 30vw;
+    right: 24vw;
+    top: 4vw;
+  }
+
+  .btnContainer {
+    width: 72vw;
+    height: 16vw;
+    position: absolute;
+    left: 4vw;
+    top: 40vw;
+    bottom: 4vw;
+}
+
+.btnContainer .text{
+  color: #FFD700;
+  text-shadow: -0.02em -0.03em 0.005em rgba(255, 223, 0, 0.60);
+  text-align: center;
+}
+
+  .innerBody2 span {
+    font-size: 3em;
+  }
+
+  .middleRow {
+    width: 80%;
+  }
+}
