@@ -13,7 +13,7 @@ a {
 }
 
 .innerBody2 {
-  height: 20vw;
+  height: 22vw;
   width: 50vw;
   color: #ffffffcc;
 }
@@ -35,17 +35,15 @@ a {
 }
 
 .btnContainer {
-  width: 28vw;
   height: 16vw;
   position: absolute;
-  left: 2vw;
-  top: 2vw;
-  bottom: 2vw;
+  padding: 2vw;
+  top: 4vw;
 }
 
 .btnDiv {
   height: auto;
-  padding-top: 2vw;
+  padding-top: 3vw;
   text-align: center;
 }
 
@@ -93,6 +91,31 @@ a.btn.btn-blue:active {
   border-color: rgba(0, 0, 0, 0.9);
 }
 
+.btnContainer .text {
+  color: #ffd700;
+  text-shadow: -0.02em -0.03em 0.005em rgba(255, 223, 0, 0.6);
+  text-align: center;
+}
+.btnContainer .heading {
+  /* color: #ffae00; */
+  font-size: 2em;
+  text-shadow: -0.02em -0.03em 0.005em rgba(255, 223, 0, 0.6);
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+.roseLine {
+  background-image: url("../../assets/images/roseLine.png");
+  width: 60%;
+  background-size: 100%;
+  position: absolute;
+  left: 50%;
+  height: 3vw;
+  top: 3vw;
+  filter: brightness(2);
+  transform: translate(-50%, -50%);
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .innerBody2 {
     height: 80vw;
@@ -113,21 +136,23 @@ a.btn.btn-blue:active {
     height: 16vw;
     position: absolute;
     left: 4vw;
-    top: 40vw;
+    top: 10vw;
     bottom: 4vw;
-}
-
-.btnContainer .text{
-  color: #FFD700;
-  text-shadow: -0.02em -0.03em 0.005em rgba(255, 223, 0, 0.60);
-  text-align: center;
-}
-
+  }
+  .roseLine {
+    top: 8vw;
+    height: 7vw;
+    width: 80%;
+  }
   .innerBody2 span {
     font-size: 3em;
   }
 
   .middleRow {
     width: 80%;
+  }
+  
+  .btnDiv {
+    padding-top: 5vw;
   }
 }
