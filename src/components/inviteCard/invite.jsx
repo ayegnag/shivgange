@@ -16,7 +16,7 @@ export default class InviteCard extends Component {
           </div>
           <div className="btnDiv">
             <a href="https://zoom.us/j/93068859962?pwd=alBnaFl2a3IyVHArL1MzRW5vMk1BUT09" className="btn btn-blue">
-              Zoom Livestream
+              Join Our Wedding
             </a>
           </div>
         </div>
